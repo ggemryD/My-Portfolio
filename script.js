@@ -194,58 +194,72 @@ function openModal(projectId) {
     // Project data with multiple images
     const projectData = {
         "hello-app": {
-            title: "Hello App",
+            title: "Hello App UI",
             images: [
-                "images/rsbetta.jpg",
-                "images/guppy5.jpg",
-                "images/goldfish2.jpg"
+                "images/hello1.jpg",
+                "images/hello2.jpg",
+                "images/hello3.jpg",
+                "images/hello4.jpg",
+                "images/hello5.jpg"
             ],
             description: "",
             technologies: [""]
         },
         "todo-app": {
-            title: "To-Do App",
+            title: "To-Do App UI",
             images: [
-                "images/placeholder-project.jpg",
-                "images/placeholder-project.jpg",
-                "images/placeholder-project.jpg",
-                "images/placeholder-project.jpg"
+                "images/todo.jpg"
             ],
-            description: "A feature-rich to-do list application with local storage, task categories, reminders, and due dates. Implements CRUD operations and data persistence. Users can create, organize, and prioritize tasks with an intuitive interface.",
-            technologies: ["Flutter", "SQLite", "Provider State Management"]
+            description: "",
+            technologies: [""]
         },
         "score-recorder": {
-            title: "Score Recorder App",
+            title: "Score Recorder App UI",
             images: [
-                "images/placeholder-project.jpg",
-                "images/placeholder-project.jpg",
-                "images/placeholder-project.jpg"
+                "images/score1.jpg",
+                "images/score2.jpg",
+                "images/score3.jpg",
+                "images/score4.jpg"
             ],
-            description: "An academic score tracking application that records and analyzes performance in quizzes, exams, and activities. Calculates pass/fail status based on configurable thresholds. Includes detailed statistics and performance trends over time.",
-            technologies: ["Flutter", "Firebase", "Cloud Firestore", "Charts"]
+            description: "",
+            technologies: [""]
         },
         "fireguard-app": {
-            title: "FireGuard App",
+            title: "FireGuard App UI",
             images: [
-                "images/placeholder-project.jpg",
-                "images/placeholder-project.jpg",
-                "images/placeholder-project.jpg"
+                "images/fireg1.jpg",
+                "images/fireg2.jpg"
             ],
-            description: "A secure authentication implementation using Firebase. Features email/password login, social authentication, password recovery, and user profile management. Includes role-based access control and secure session management.",
-            technologies: ["Flutter", "Firebase Authentication", "Cloud Storage"]
+            description: "",
+            technologies: [""]
         },
         "fishdaddies-web": {
-            title: "Fish Daddies",
+            title: "Fish Daddies UI",
             images: [
-                "images/placeholder-project.jpg",
-                "images/placeholder-project.jpg",
-                "images/placeholder-project.jpg"
+                "images/fd1.png",
+                "images/fd2.png",
+                "images/fd3.png",
+                "images/fd4.png",
+                "images/fd5.png",
+                "images/fd6.png",
+                "images/fd7.png",
+                "images/fd8.png",
+                "images/fd9.png",
+                "images/fd10.png",
+                "images/fd11.png",
+                "images/fd12.png",
+                "images/fd13.png",
+                "images/fd14.png",
+                "images/fd15.png",
+                "images/fd16.png",
+                "images/fd17.png",
+                "images/fd18.png"
             ],
-            description: "A secure authentication implementation using Firebase. Features email/password login, social authentication, password recovery, and user profile management. Includes role-based access control and secure session management.",
-            technologies: ["Flutter", "Firebase Authentication", "Cloud Storage"]
+            description: "",
+            technologies: [""]
         },
         "profiling-web": {
-            title: "BSIT Student Profiling System",
+            title: "BSIT Student Profiling System UI",
             images: [
                 "images/profiling9.png",
                 "images/profiling1.png",
@@ -255,7 +269,7 @@ function openModal(projectId) {
                 "images/profiling5.png",
                 "images/profiling6.png",
                 "images/profiling7.png",
-                "images/profiling8.png",
+                "images/profiling8.png"
             ],
             description: "",
             technologies: [""]

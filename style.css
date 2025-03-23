@@ -25,10 +25,6 @@ OPTION 4: PROFESSIONAL TEAL
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -37,9 +33,11 @@ body {
     overflow-x: hidden; /*gamit ani para di mo overflow if sa mobile phone imo gamiton*/
 }
 
-html{
-    overflow-x: hidden; /*gamit ani para di mo overflow if sa mobile phone imo gamiton*/
+html, body {
+    overflow-x: hidden;/*gamit ani para di mo overflow if sa mobile phone imo gamiton*/
+    scroll-behavior: smooth;
 }
+
 
 a {
     text-decoration: none;
@@ -122,29 +120,6 @@ header.scrolled {
     background-color: rgba(255, 255, 255, 0.98);
     padding: 8px 0;
 }
-
-/*  */
-/* Dark Mode */
-/* body.dark-mode {
-    background-color: #1e1e1e;
-    color: #f0f0f0;
-} */
-
-/* Update sections */
-/* .dark-mode section#about,
-.dark-mode section#skills,
-.dark-mode section#projects,
-.dark-mode section#contact {
-    background-color: #1e1e1e;
-    color: #ffffff;
-} */
-
-/* Adjust links for better visibility */
-/* .dark-mode a {
-    color: #4db5ff;
-} */
-
-/*  */
 
 /* Dark mode header */
 .dark-mode header {
@@ -813,7 +788,7 @@ nav {
 
 
 /* PROJECTS SECTION */
-#projects {
+/* #projects {
     background-color: white;
     padding: 100px 0;
 }
@@ -946,6 +921,244 @@ nav {
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 500;
+} */
+
+/* PROJECTS SECTION */
+#projects {
+    background-color: white;
+    padding: 100px 0;
+}
+
+.project-filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: none;
+    border: none;
+    padding: 8px 20px;
+    margin: 0 5px 10px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.filter-btn:hover {
+    color: var(--primary-color);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-img {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+/* Modify the project links section */
+.project-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+/* This ensures the project-links are always visible on mobile */
+@media (max-width: 768px) {
+    .project-links {
+        opacity: 0; /* Still hidden by default */
+    }
+    
+    /* Show a view details button instead */
+    .project-card .view-details-btn {
+        display: flex;
+    }
+}
+
+.project-img:hover .project-links {
+    opacity: 1;
+}
+
+.project-img:hover img {
+    transform: scale(1.1);
+}
+
+.project-links a {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    color: var(--text-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.project-links a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Add new action links to the card info section */
+.project-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.project-action-btn {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.github-btn {
+    background-color: #f6f8fa;
+    color: #24292e;
+    border: 1px solid #e1e4e8;
+}
+
+.github-btn:hover {
+    background-color: #e1e4e8;
+}
+
+.demo-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+}
+
+.demo-btn:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* View project button for mobile */
+.view-details-btn {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: none; /* Hidden by default, shown on mobile */
+    align-items: center;
+    gap: 5px;
+    z-index: 2;
+}
+
+.view-details-btn i {
+    font-size: 0.8rem;
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-info h3 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.project-info p {
+    color: var(--light-text);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tags span {
+    background-color: rgba(74, 108, 247, 0.1);
+    color: var(--primary-color);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .project-card {
+        pointer-events: auto; /* Enable clicking anywhere */
+    }
+    
+    .project-img {
+        height: 180px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+    
+    /* Prevent the project card from being a single large click target */
+    .project-card-click-area {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
 }
 
 /* CONTACT SECTION */
@@ -1067,7 +1280,7 @@ nav {
     padding: 40px;
     border-radius: 10px;
     position: relative;
-    max-width: 900px;
+    max-width: 1000px;
     width: 90%;
     max-height: 90vh;
     overflow-y: auto;
@@ -1090,14 +1303,27 @@ nav {
     background-color: #f5f5f5;
     border-radius: 5px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px; /* Fixed height for consistency */
 }
 
 .main-image-container img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* This preserves aspect ratio */
     display: block;
     border-radius: 5px;
     transition: transform 0.3s ease;
+}
+
+/* Add special class for mobile screenshots */
+.main-image-container img[src*="score"], 
+.main-image-container img[src*="hello"],
+.main-image-container img[src*="fireg"] {
+    max-height: 100%;
+    max-width: 50%; /* Mobile screenshots take less width */
 }
 
 .gallery-controls {
@@ -1129,6 +1355,7 @@ nav {
     cursor: pointer;
     margin: 0 15px;
     transition: all 0.3s ease;
+    z-index: 10;
 }
 
 .gallery-control:hover {
@@ -1141,6 +1368,7 @@ nav {
     gap: 10px;
     flex-wrap: wrap;
     margin-top: 10px;
+    justify-content: center;
 }
 
 .thumbnail {
@@ -1207,6 +1435,10 @@ nav {
         padding: 20px;
     }
     
+    .main-image-container {
+        height: 350px;
+    }
+    
     .thumbnail {
         width: 60px;
         height: 45px;
@@ -1219,6 +1451,10 @@ nav {
 }
 
 @media screen and (max-width: 480px) {
+    .main-image-container {
+        height: 300px;
+    }
+    
     .thumbnail-container {
         justify-content: center;
     }
@@ -1290,9 +1526,9 @@ nav {
         font-size: 1.5rem;
     }
     
-    .projects-grid {
+    /* .projects-grid {
         grid-template-columns: 1fr;
-    }
+    } */
 }
 
 /*  */
@@ -1340,14 +1576,14 @@ nav {
     }
     
     /* Fix hover states for mobile (use active instead) */
-    .project-card:active {
+    /* .project-card:active {
         transform: translateY(-5px);
     }
     
     .project-links a:active {
         background-color: var(--primary-color);
         color: white;
-    }
+    } */
     
     /* Fix position sticky for mobile */
     header {

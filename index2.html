@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <div class="hamburger">&#9776;</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images/profile.jpg" alt="My Profile Picture" class="profile-pic">
+        <p>Hello! I'm a web developer passionate about building cool projects.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Laravel</li>
+            <li>Flutter</li>
+            <li>Dart</li>
+            <li>MySQL</li>
+            <li>Firebase</li>
+            <li>Sqlite</li>
+            <li>Figma</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Flutter Projects</h2>
+        
+        <div class="project" onclick="openModal('hello-app')">
+            <h3>Hello App</h3>
+            <p>Just a simple and interactive hello world.</p>
+        </div>
+        
+        <div class="project" onclick="openModal('todo-app')">
+            <h3>To-Do App</h3>
+            <p>To-Do List app listing your to-do activity.</p>
+        </div>
+
+        <div class="project" onclick="openModal('score-recorder')">
+            <h3>Score Recorder App</h3>
+            <p>Putting all your scores: quizzes, exams, activities. and calculates if you pass or fail.</p>
+        </div>
+
+        <div class="project" onclick="openModal('fireguard-app')">
+            <h3>FireGuard App</h3>
+            <p>Just a simple login authentication using Firebase as a database.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to connect with me on social media or email me for inquiries.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/gemrydell333" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/ggemry_3/" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="mailto:gemrydelle@gmail.com">
+                <img src="images/gmail.png" alt="Email">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 My Portfolio</p>
+    </footer>
+
+    <!-- MODAL FOR PROJECT SCREENSHOTS -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="Project Screenshot">
+        </div>
+    </div>
+
+</body>
+</html>

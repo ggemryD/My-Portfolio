@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header id="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Gemry<span class="highlight">Delle</span></span>
+            </a>
+            
+            <div class="nav-toggle" id="navToggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <nav id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <a href="#contact" class="btn btn-sm">Hire Me</a>
+                </div>
+                
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span class="highlight">Gemry Delle</span></h1>
+                <p class="tagline">Mobile & Web Developer</p>
+                <div class="hero-description">
+                    <p>Crafting responsive, user-friendly experiences for web and mobile platforms</p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-avatar-container">
+                <div class="hero-avatar">
+                    <img src="images/avatar.png" alt="Gemry Delle" class="avatar">
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/ggemryD" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="My Profile Picture" class="profile-pic">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a passionate web and mobile developer with expertise in creating responsive and user-friendly applications. I specialize in Flutter mobile development and web technologies.</p>
+                    <p>My journey in programming began with a curiosity for how digital products work, and has evolved into a career building solutions that solve real problems.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>BS in Information Technology - 3rd Year</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>1 year of development experience</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <!-- <span>Based in Your Location</span> -->
+                            <span>Guinabasan, Tubigagmanok, Asturias, Cebu</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn" download>Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-container">
+                
+                <div class="skill-category">
+                    <h3>Mobile Development</h3>
+                    <div class="skills-grid">
+                        <!-- <div class="skill-item"><i class="fab fa-flutter" style="color: #02569B;"></i> <span>Flutter</span></div> -->
+                        <div class="skill-item">
+                            <img src="images/flutter2.png" alt="Flutter" style="width: 24px; height: 24px;">
+                            <span>Flutter</span>
+                        </div>                        
+                        <div class="skill-item"><i class="fas fa-mobile-alt" style="color: #0175C2;"></i> <span>Dart</span></div>
+                        <div class="skill-item">
+                            <img src="images/firebase2.png" alt="Flutter" style="width: 24px; height: 24px;">
+                            <span>Firebase</span>
+                        </div>        
+                        <div class="skill-item"><i class="fas fa-database" style="color: #003B57;"></i> <span>SQLite</span></div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><i class="fab fa-html5" style="color: #E44D26;"></i> <span>HTML</span></div>
+                        <div class="skill-item"><i class="fab fa-css3-alt" style="color: #264DE4;"></i> <span>CSS</span></div>
+                        <div class="skill-item"><i class="fab fa-js" style="color: #F7DF1E;"></i> <span>JavaScript</span></div>
+                        <div class="skill-item"><i class="fab fa-php" style="color: #777BB4;"></i> <span>PHP</span></div>
+                        <div class="skill-item"><i class="fab fa-laravel" style="color: #FF2D20;"></i> <span>Laravel</span></div>
+                        <div class="skill-item"><i class="fas fa-database" style="color: #4479A1;"></i> <span>MySQL</span></div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Design</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><i class="fab fa-figma" style="color: #F24E1E;"></i> <span>Figma</span></div>
+                        <div class="skill-item"><i class="fab fa-git-alt" style="color: #F05032;"></i> <span>Git</span></div>
+                    </div>
+                </div>                
+    
+            </div>
+        </div>
+    </section>    
+    
+    <section id="projects">
+        <div class="section-container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="flutter">Flutter</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="flutter" onclick="openModal('hello-app')">
+                    <div class="project-img">
+                        <img src="images/angelfish.jpg" alt="Hello App">
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Hello App</h3>
+                        <p>Simple and interactive hello world app that demonstrates the basics of Flutter UI development.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="flutter" onclick="openModal('todo-app')">
+                    <div class="project-img">
+                        <img src="images/Betta.jpg" alt="To-Do App">
+                        <div class="project-links">
+                            <a href="https://github.com/ggemryD/ToDo-App/tree/master" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>To-Do App</h3>
+                        <p>A feature-rich to-do list app with local storage, reminders, and task categorization.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <!-- <span>SQLite</span> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="flutter" onclick="openModal('score-recorder')">
+                    <div class="project-img">
+                        <img src="images/score-recorder.png" alt="Score Recorder App">
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Score Recorder App</h3>
+                        <p>Records academic scores for quizzes, exams, and activities, with pass/fail calculation.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="flutter" onclick="openModal('fireguard-app')">
+                    <div class="project-img">
+                        <img src="images/fireguard.png" alt="FireGuard App">
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FireGuard App</h3>
+                        <p>Implementation of secure Firebase authentication with email and social login options.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web" onclick="openModal('fireguard-app')">
+                    <div class="project-img">
+                        <img src="images/guppy5.jpg" alt="Portfolio Website">
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Personal portfolio website built with HTML, CSS, and JavaScript.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web" onclick="openModal('fireguard-app')">
+                    <div class="project-img">
+                        <img src="images/fishdaddies-logo.png" alt="Portfolio Website">
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fish Daddies</h3>
+                        <p>Fish E-Commerce.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web" onclick="openModal('profiling-web')">
+                    <div class="project-img">
+                        <img src="images/bsitlogo.png" alt="Portfolio Website">
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>BSIT Student Profiling System</h3>
+                        <p>kjshadfkh kjshdfkjh.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="section-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out through any of these channels:</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>gemrydelle@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <!-- <span>+123 456 7890</span> -->
+                             <span>09703851090</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Guinabasan, Tubigagmanok, Asturias, Cebu</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/gemrydell333" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ggemry_3/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <!-- <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form> -->
+                    <!-- Replace your current contact form with this Netlify-ready version -->
+                    <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <p class="hidden">
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
+                        <input type="hidden" name="form-name" value="contact" />
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">Project Title</h2>
+            
+            <!-- Image Gallery/Carousel -->
+            <div class="image-gallery">
+                <div class="main-image-container">
+                    <img id="modal-main-image" src="" alt="Project Screenshot">
+                    <div class="gallery-controls">
+                        <button class="gallery-control prev" onclick="prevImage()"><i class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-control next" onclick="nextImage()"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="thumbnail-container" id="image-thumbnails">
+                    <!-- Thumbnails will be added dynamically -->
+                </div>
+            </div>
+            
+            <div id="modal-description">
+                <p>Project description will appear here.</p>
+            </div>
+            <div class="modal-tech">
+                <!-- <h3>Technologies Used:</h3> e uncomment ra ya koni --> 
+                <div id="modal-tech-list"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

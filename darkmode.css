@@ -1,0 +1,108 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Update sections */
+.dark-mode section#about {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+.dark-mode section#skills {
+    background-color: #181818;
+    color: #f0f0f0;
+}
+
+.dark-mode section#projects {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+.dark-mode section#contact {
+    background-color: #181818;
+    color: #f0f0f0;
+}
+
+/* For cards and content containers in dark mode: */
+.dark-mode .skill-category {
+    background-color: #2d2d2d;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .project-card {
+    background-color: #2d2d2d;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .contact-form {
+    background-color: #2d2d2d;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Fix text colors and details for better contrast: */
+.dark-mode .section-title {
+    color: #f0f0f0;
+}
+
+.dark-mode .about-text p {
+    color: #b0b0b0;
+}
+
+.dark-mode .project-info h3 {
+    color: #f0f0f0;
+}
+
+.dark-mode .project-info p {
+    color: #b0b0b0;
+}
+
+.dark-mode .skill-item {
+    color: #f0f0f0;
+    background-color: #3d3d3d;
+}
+
+.dark-mode .project-tags span {
+    background-color: rgba(13, 148, 136, 0.2);
+    color: #4eeee2;
+}
+
+/* Update form elements for dark mode: */
+.dark-mode .form-group input,
+.dark-mode .form-group textarea {
+    background-color: #333;
+    border-color: #444;
+    color: #f0f0f0;
+}
+
+.dark-mode .form-group input:focus,
+.dark-mode .form-group textarea:focus {
+    border-color: var(--primary-color);
+}
+
+/* Fix the modal styling for dark mode: */
+.dark-mode .modal-content {
+    background-color: #2d2d2d;
+    color: #f0f0f0;
+}
+
+.dark-mode .modal-content h2 {
+    color: #f0f0f0;
+}
+
+.dark-mode .close {
+    color: #f0f0f0;
+}
+
+.dark-mode .main-image-container {
+    background-color: #333;
+}
+
+.dark-mode .thumbnail {
+    border: 1px solid #444;
+}
+
+.dark-mode .modal-tech-list span {
+    background-color: rgba(13, 148, 136, 0.2);
+    color: #4eeee2;
+}

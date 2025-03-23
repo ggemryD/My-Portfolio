@@ -1,0 +1,124 @@
+/* 
+==========================================
+PORTFOLIO COLOR SCHEME OPTIONS
+==========================================
+*/
+
+/* 
+OPTION 1: MODERN BLUE (Your Current Scheme)
+------------------------------------------
+*/
+:root {
+    --primary-color: #4a6cf7;
+    --primary-dark: #3d5bd9;
+    --secondary-color: #f75023;
+    --text-color: #333;
+    --light-text: #6e7074;
+    --dark-bg: #111827;
+    --light-bg: #f9fafb;
+    --border-color: #e5e7eb;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
+    
+    /* Added variables */
+    --primary-color-transparent: rgba(74, 108, 247, 0.15);
+    --primary-color-rgb: 74, 108, 247;
+    --gradient-primary: linear-gradient(135deg, #4a6cf7, #3d5bd9);
+}
+
+/* 
+OPTION 2: TECH PURPLE
+------------------------------------------
+*/
+/*
+:root {
+    --primary-color: #7c3aed;
+    --primary-dark: #6d28d9;
+    --secondary-color: #2dd4bf;
+    --text-color: #1f2937;
+    --light-text: #6b7280;
+    --dark-bg: #0f172a;
+    --light-bg: #f8fafc;
+    --border-color: #e2e8f0;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
+    
+    --primary-color-transparent: rgba(124, 58, 237, 0.15);
+    --primary-color-rgb: 124, 58, 237;
+    --gradient-primary: linear-gradient(135deg, #7c3aed, #6d28d9);
+}
+*/
+
+/* 
+OPTION 3: CREATIVE ORANGE
+------------------------------------------
+*/
+/*
+:root {
+    --primary-color: #f97316;
+    --primary-dark: #ea580c;
+    --secondary-color: #3b82f6;
+    --text-color: #1e293b;
+    --light-text: #64748b;
+    --dark-bg: #0f172a;
+    --light-bg: #f8fafc;
+    --border-color: #e2e8f0;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
+    
+    --primary-color-transparent: rgba(249, 115, 22, 0.15);
+    --primary-color-rgb: 249, 115, 22;
+    --gradient-primary: linear-gradient(135deg, #f97316, #ea580c);
+}
+*/
+
+/* 
+OPTION 4: PROFESSIONAL TEAL
+------------------------------------------
+*/
+/*
+:root {
+    --primary-color: #0d9488;
+    --primary-dark: #0f766e;
+    --secondary-color: #f43f5e;
+    --text-color: #0f172a;
+    --light-text: #475569;
+    --dark-bg: #0f172a;
+    --light-bg: #f8fafc;
+    --border-color: #e2e8f0;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
+    
+    --primary-color-transparent: rgba(13, 148, 136, 0.15);
+    --primary-color-rgb: 13, 148, 136;
+    --gradient-primary: linear-gradient(135deg, #0d9488, #0f766e);
+}
+*/
+
+/* 
+OPTION 5: DARK MODE THEMED
+------------------------------------------
+*/
+/*
+:root {
+    --primary-color: #6366f1;
+    --primary-dark: #4f46e5;
+    --secondary-color: #ec4899;
+    --text-color: #e2e8f0;
+    --light-text: #94a3b8;
+    --dark-bg: #0f172a;
+    --light-bg: #1e293b;
+    --border-color: #334155;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    --transition: all 0.3s ease;
+    
+    --primary-color-transparent: rgba(99, 102, 241, 0.15);
+    --primary-color-rgb: 99, 102, 241;
+    --gradient-primary: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+}
+*/

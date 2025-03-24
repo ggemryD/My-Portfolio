@@ -194,7 +194,7 @@ function openModal(projectId) {
     // Project data with multiple images
     const projectData = {
         "hello-app": {
-            title: "Hello App UI",
+            title: "U.I",
             images: [
                 "images/hello1.jpg",
                 "images/hello2.jpg",
@@ -206,7 +206,7 @@ function openModal(projectId) {
             technologies: [""]
         },
         "todo-app": {
-            title: "To-Do App UI",
+            title: "U.I",
             images: [
                 "images/todo.jpg"
             ],
@@ -214,7 +214,7 @@ function openModal(projectId) {
             technologies: [""]
         },
         "score-recorder": {
-            title: "Score Recorder App UI",
+            title: "U.I",
             images: [
                 "images/score1.jpg",
                 "images/score2.jpg",
@@ -225,7 +225,7 @@ function openModal(projectId) {
             technologies: [""]
         },
         "fireguard-app": {
-            title: "FireGuard App UI",
+            title: "U.I",
             images: [
                 "images/fireg1.jpg",
                 "images/fireg2.jpg"
@@ -234,7 +234,7 @@ function openModal(projectId) {
             technologies: [""]
         },
         "fishdaddies-web": {
-            title: "Fish Daddies UI",
+            title: "U.I",
             images: [
                 "images/fd1.png",
                 "images/fd2.png",
@@ -259,7 +259,7 @@ function openModal(projectId) {
             technologies: [""]
         },
         "profiling-web": {
-            title: "BSIT Student Profiling System UI",
+            title: "U.I",
             images: [
                 "images/profiling9.png",
                 "images/profiling1.png",

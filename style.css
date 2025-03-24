@@ -945,6 +945,11 @@ nav {
     font-weight: 500;
     border-radius: 4px;
     transition: var(--transition);
+    color: black;
+}
+
+.dark-mode .filter-btn{
+    color: white;
 }
 
 .filter-btn:hover {

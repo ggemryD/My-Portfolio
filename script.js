@@ -273,6 +273,20 @@ function openModal(projectId) {
             ],
             description: "",
             technologies: [""]
+        },
+        "vmgo-web": {
+            title: "U.I",
+            images: [
+                "images/vmgo1.png",
+                "images/vmgo2.png",
+                "images/vmgo3.png",
+                "images/vmgo4.png",
+                "images/vmgo7.png",
+                "images/vmgo5.png",
+                "images/vmgo6.png"
+            ],
+            description: "",
+            technologies: [""]
         }
     };
     

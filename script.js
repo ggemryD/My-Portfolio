@@ -194,7 +194,7 @@ function openModal(projectId) {
     // Project data with multiple images
     const projectData = {
         "hello-app": {
-            title: "U.I",
+            title: "",
             images: [
                 "images/hello1.jpg",
                 "images/hello2.jpg",
@@ -206,7 +206,7 @@ function openModal(projectId) {
             technologies: [""]
         },
         "todo-app": {
-            title: "U.I",
+            title: "",
             images: [
                 "images/todo.jpg"
             ],
@@ -214,7 +214,7 @@ function openModal(projectId) {
             technologies: [""]
         },
         "score-recorder": {
-            title: "U.I",
+            title: "",
             images: [
                 "images/score1.jpg",
                 "images/score2.jpg",
@@ -225,7 +225,7 @@ function openModal(projectId) {
             technologies: [""]
         },
         "fireguard-app": {
-            title: "U.I",
+            title: "",
             images: [
                 "images/fireg1.jpg",
                 "images/fireg2.jpg"
@@ -234,12 +234,13 @@ function openModal(projectId) {
             technologies: [""]
         },
         "fishdaddies-web": {
-            title: "U.I",
+            title: "",
             images: [
                 "images/fd1.png",
                 "images/fd2.png",
                 "images/fd3.png",
                 "images/fd4.png",
+                "images/fd19.png",
                 "images/fd5.png",
                 "images/fd6.png",
                 "images/fd7.png",
@@ -259,7 +260,7 @@ function openModal(projectId) {
             technologies: [""]
         },
         "profiling-web": {
-            title: "U.I",
+            title: "",
             images: [
                 "images/profiling9.png",
                 "images/profiling1.png",
@@ -275,7 +276,7 @@ function openModal(projectId) {
             technologies: [""]
         },
         "vmgo-web": {
-            title: "U.I",
+            title: "",
             images: [
                 "images/vmgo1.png",
                 "images/vmgo2.png",

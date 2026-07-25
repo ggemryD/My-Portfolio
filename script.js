@@ -196,11 +196,20 @@ function openModal(projectId) {
         "hello-app": {
             title: "",
             images: [
-                "images/hello1.jpg",
-                "images/hello2.jpg",
-                "images/hello3.jpg",
-                "images/hello4.jpg",
-                "images/hello5.jpg"
+                "images/aq3.jpg",
+                "images/aq4.jpg",
+                "images/aq5.jpg",
+                "images/aq6.jpg",
+                "images/aq7.jpg",
+                "images/aq8.jpg",
+                "images/aq9.jpg",
+                "images/aq10.jpg",
+                "images/aq11.jpg",
+                "images/aq12.jpg",
+                "images/aq13.jpg",
+                "images/aq14.jpeg",
+                "images/aq15.jpeg",
+                "images/aq16.jpeg"
             ],
             description: "",
             technologies: [""]

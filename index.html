@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="darkmode.css">
@@ -52,8 +52,24 @@
                     <p>Building modern web, mobile, and IoT applications with a focus on performance, usability, and real-world solutions.</p>
                 </div>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    <a href="files/MY_RESUME.pdf" class="btn" download="MY_RESUME.pdf">
+                        <i class="fas fa-file-download"></i> Download Resume
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <i class="fas fa-folder-open"></i> View My Projects
+                    </a>
+                </div>
+
+                <div class="hero-social-row">
+                    <a href="https://github.com/ggemryD" target="_blank" class="hero-social-chip" title="GitHub">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/gemry-delle-taparan-210059345/" target="_blank" class="hero-social-chip" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="mailto:gemrydelle@gmail.com" class="hero-social-chip" title="Email">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
                 </div>
             </div>
             <div class="hero-avatar-container">
@@ -103,7 +119,7 @@
                         </div>
                     </div>
                     <!-- <a href="#" class="btn" download>Download CV</a> -->
-                    <a href="files/MY_RESUME.pdf" class="btn" download="MY_RESUME.pdf">Download Resume</a>
+                    <!-- <a href="files/MY_RESUME.pdf" class="btn" download="MY_RESUME.pdf">Download Resume</a> -->
                 </div>
             </div>
         </div>
@@ -277,8 +293,8 @@
                 <div class="project-card" data-category="flutter">
                     <div class="project-img">
                         <img src="images/aq2.jpg" alt="AquaCare">
-                        <button class="view-details-btn" onclick="openModal('hello-app')">
-                            View UI <i class="fas fa-arrow-right"></i>
+                        <button class="view-details-btn" onclick="openLightbox('hello-app')">
+                            <i class="fas fa-images"></i> View UI
                         </button>
                     </div>
                     <div class="project-info">
@@ -333,8 +349,8 @@
                             <a href="#" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
                             <a href="#" target="_blank" class="external-link"><i class="fas fa-external-link-alt"></i></a>
                         </div> -->
-                        <button class="view-details-btn" onclick="openModal('score-recorder')">
-                            View UI <i class="fas fa-arrow-right"></i>
+                        <button class="view-details-btn" onclick="openLightbox('score-recorder')">
+                            <i class="fas fa-images"></i> View UI
                         </button>
                     </div>
                     <div class="project-info">
@@ -363,8 +379,8 @@
                             <a href="#" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
                             <a href="#" target="_blank" class="external-link"><i class="fas fa-external-link-alt"></i></a>
                         </div> -->
-                        <button class="view-details-btn" onclick="openModal('fishdaddies-web')">
-                            View UI <i class="fas fa-arrow-right"></i>
+                        <button class="view-details-btn" onclick="openLightbox('fishdaddies-web')">
+                            <i class="fas fa-images"></i> View UI
                         </button>
                     </div>
                     <div class="project-info">
@@ -394,8 +410,8 @@
                             <a href="#" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
                             <a href="#" target="_blank" class="external-link"><i class="fas fa-external-link-alt"></i></a>
                         </div> -->
-                        <button class="view-details-btn" onclick="openModal('profiling-web')">
-                            View UI <i class="fas fa-arrow-right"></i>
+                        <button class="view-details-btn" onclick="openLightbox('profiling-web')">
+                            <i class="fas fa-images"></i> View UI
                         </button>
                     </div>
                     <div class="project-info">
@@ -425,8 +441,8 @@
                             <a href="#" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
                             <a href="#" target="_blank" class="external-link"><i class="fas fa-external-link-alt"></i></a>
                         </div> -->
-                        <button class="view-details-btn" onclick="openModal('vmgo-web')">
-                            View UI <i class="fas fa-arrow-right"></i>
+                        <button class="view-details-btn" onclick="openLightbox('vmgo-web')">
+                            <i class="fas fa-images"></i> View UI
                         </button>
                     </div>
                     <div class="project-info">
@@ -455,82 +471,102 @@
     
     <section id="contact">
         <div class="section-container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p>Feel free to reach out through any of these channels:</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>gemrydelle@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <!-- <span>+123 456 7890</span> -->
-                             <span>09703851090</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Guinabasan, Tubigagmanok, Asturias, Cebu</span>
-                        </div>
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-subtitle">I'm currently open to Software Developer roles. Here's how you can reach me:</p>
+
+            <div class="contact-cards-grid">
+                <a href="mailto:gemrydelle@gmail.com" class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-envelope"></i>
                     </div>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/gemrydell333" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/ggemry_3/" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://github.com/" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/gemry-delle-taparan-210059345/" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
+                    <h3>Email</h3>
+                    <p class="contact-card-value">gemrydelle@gmail.com</p>
+                    <span class="contact-card-action">Send Email <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <a href="tel:+639703851090" class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-phone"></i>
                     </div>
+                    <h3>Phone</h3>
+                    <p class="contact-card-value">+63 970 385 1090</p>
+                    <span class="contact-card-action">Call / Text <i class="fas fa-arrow-right"></i></span>
+                </a>
+
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p class="contact-card-value">Asturias, Cebu, Philippines</p>
+                    <span class="contact-card-action"><i class="fas fa-check-circle"></i> Open to Remote</span>
                 </div>
-                <div class="contact-form">
-                    <h3>Send Me a Message</h3>
-                    <!-- <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form> -->
-                    <!-- Replace your current contact form with this Netlify-ready version -->
-                    <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                        <p class="hidden">
-                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                        </p>
-                        <input type="hidden" name="form-name" value="contact" />
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
+
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Availability</h3>
+                    <p class="contact-card-value">Full-time / Internship</p>
+                    <span class="contact-card-action"><i class="fas fa-circle"></i> Available Now</span>
                 </div>
+            </div>
+
+            <div class="contact-cta-box">
+                <h3>Prefer a formal application?</h3>
+                <p>Download my resume or connect with me on LinkedIn.</p>
+                <div class="contact-cta-buttons">
+                    <a href="files/MY_RESUME.pdf" class="btn" download="MY_RESUME.pdf">
+                        <i class="fas fa-file-download"></i> Download Resume
+                    </a>
+                    <a href="https://www.linkedin.com/in/gemry-delle-taparan-210059345/" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-social-grid">
+                <a href="https://github.com/ggemryD" target="_blank" class="social-btn github-social">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/gemry-delle-taparan-210059345/" target="_blank" class="social-btn linkedin-social">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://www.facebook.com/gemrydell333" target="_blank" class="social-btn facebook-social">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/ggemry_3/" target="_blank" class="social-btn instagram-social">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
             </div>
         </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text footer-logo">ggem<span class="highlight">ryD</span></span>
+                    <p class="footer-tagline">Building modern web, mobile, and IoT applications.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/ggemryD" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gemry-delle-taparan-210059345/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:gemrydelle@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Gemry Delle Taparan. All rights reserved.</p>
+                <!-- <p class="footer-made">Designed &amp; Built with <i class="fas fa-heart"></i></p> -->
+            </div>
+        </div>
+    </footer>
 
     <!-- PROJECT MODAL -->
     <div id="modal" class="modal">
@@ -540,8 +576,11 @@
             
             <!-- Image Gallery/Carousel -->
             <div class="image-gallery">
-                <div class="main-image-container">
-                    <img id="modal-main-image" src="" alt="Project Screenshot">
+                <div class="main-image-container" id="main-image-container">
+                    <img id="modal-main-image" src="" alt="Project Screenshot" style="cursor: zoom-in;">
+                    <div class="zoom-hint" id="zoom-hint">
+                        <i class="fas fa-expand"></i> Click to view fullscreen
+                    </div>
                     <div class="gallery-controls">
                         <button class="gallery-control prev" onclick="prevImage()"><i class="fas fa-chevron-left"></i></button>
                         <button class="gallery-control next" onclick="nextImage()"><i class="fas fa-chevron-right"></i></button>
@@ -558,6 +597,44 @@
             <div class="modal-tech">
                 <!-- <h3>Technologies Used:</h3> e uncomment ra ya koni --> 
                 <div id="modal-tech-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEDICATED FULLSCREEN IMAGE VIEWER (Gallery-style) -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-topbar">
+            <div class="lightbox-title-section">
+                <h3 class="lightbox-project-title" id="lightbox-project-title">Project Screenshots</h3>
+                <span class="lightbox-counter" id="lightbox-counter">1 / 1</span>
+            </div>
+            <div class="lightbox-topbar-actions">
+                <button class="lightbox-action-btn" id="lightbox-zoom-btn" onclick="toggleZoomHint()" title="Zoom hint">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                </button>
+                <button class="lightbox-action-btn lightbox-close-btn" onclick="closeLightbox()" title="Close (Esc)">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="lightbox-main" id="lightbox-content">
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev" onclick="lightboxPrevImage()" title="Previous (←)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="lightbox-image-wrapper" id="lightbox-image-wrapper">
+                <img id="lightbox-image" src="" alt="Screenshot" draggable="false">
+            </div>
+            <button class="lightbox-nav lightbox-next" id="lightbox-next" onclick="lightboxNextImage()" title="Next (→)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="lightbox-bottombar">
+            <div class="lightbox-thumbnails" id="lightbox-thumbnails">
+                <!-- Thumbnails will be added dynamically -->
+            </div>
+            <div class="lightbox-navigation-hint" id="lightbox-navigation-hint">
+                <span class="hint-desktop"><i class="fas fa-keyboard"></i> ← → arrows &nbsp;•&nbsp; Esc to close</span>
+                <span class="hint-mobile"><i class="fas fa-hand-point-right"></i> Swipe to navigate &nbsp;•&nbsp; Tap × to close</span>
             </div>
         </div>
     </div>

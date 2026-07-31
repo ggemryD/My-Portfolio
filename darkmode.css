@@ -106,3 +106,98 @@ body.dark-mode {
     background-color: rgba(13, 148, 136, 0.2);
     color: #4eeee2;
 }
+
+/* ============================================
+   NEW CONTACT SECTION - DARK MODE
+   ============================================ */
+.dark-mode .section-subtitle {
+    color: #b0b0b0;
+}
+
+.dark-mode .contact-card {
+    background-color: #252525;
+    border: 1px solid #3a3a3a;
+}
+
+.dark-mode .contact-card:hover {
+    background-color: #2a2a2a;
+    border-color: transparent;
+}
+
+.dark-mode .contact-card h3 {
+    color: #a0a0a0;
+}
+
+.dark-mode .contact-card-value {
+    color: #f0f0f0;
+}
+
+.dark-mode .contact-card-icon {
+    background: linear-gradient(135deg, rgba(13, 148, 136, 0.25), rgba(13, 148, 136, 0.1));
+    color: #2dd4bf;
+}
+
+.dark-mode .contact-card:hover .contact-card-icon {
+    background: linear-gradient(135deg, #0d9488, #0f766e);
+    color: white;
+}
+
+.dark-mode .contact-card-action {
+    color: #2dd4bf;
+}
+
+.dark-mode .contact-cta-box {
+    background: linear-gradient(135deg, rgba(13, 148, 136, 0.2), rgba(13, 148, 136, 0.05));
+    border: 1px solid rgba(13, 148, 136, 0.35);
+}
+
+.dark-mode .contact-cta-box h3 {
+    color: #f0f0f0;
+}
+
+.dark-mode .contact-cta-box p {
+    color: #b0b0b0;
+}
+
+/* Light text inside the about section dark mode */
+.dark-mode .about-details .detail-item {
+    color: #c8c8c8;
+}
+
+.dark-mode .about-details .detail-item i {
+    color: #2dd4bf;
+}
+
+/* Dark mode btn-outline for CTA box */
+.dark-mode .contact-cta-box .btn-outline {
+    color: #2dd4bf;
+    border-color: #2dd4bf;
+}
+
+.dark-mode .contact-cta-box .btn-outline:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Ensure hero buttons are always visible on dark hero background */
+.dark-mode .btn-outline {
+    border-color: #2dd4bf;
+    color: #2dd4bf;
+}
+
+.dark-mode .btn-outline:hover {
+    background-color: #0d9488;
+    color: white;
+}
+
+/* Section titles & about text dark mode refinements */
+.dark-mode .detail-item span {
+    color: #d0d0d0;
+}
+
+.dark-mode #about h2,
+.dark-mode #skills h2,
+.dark-mode #projects h2,
+.dark-mode #contact h2 {
+    color: #f8f8f8;
+}

@@ -93,6 +93,23 @@ const PROJECT_DATA = {
         description: "A student management system with admin-controlled enrollment forms, student profiles, and announcements.",
         technologies: ["HTML", "CSS", "JavaScript", "PHP"]
     },
+    "inventory-system": {
+        title: "Inventory Management System",
+        images: [
+            "images/in1.png",
+            "images/in2.png",
+            "images/in3.png",
+            "images/in4.png",
+            "images/in5.png",
+            "images/in6.png",
+            "images/in7.png",
+            "images/in8.png",
+            "images/in9.png",
+            "images/in10.png"
+        ],
+        description: "A student management system with admin-controlled enrollment forms, student profiles, and announcements.",
+        technologies: ["HTML", "CSS", "JavaScript", "PHP"]
+    },
     "vmgo-web": {
         title: "CTU-TC Web",
         images: [

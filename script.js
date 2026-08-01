@@ -2,7 +2,7 @@
 // GLOBAL PROJECT DATA - Used by both modal and lightbox
 // ============================================
 const PROJECT_DATA = {
-    "hello-app": {
+    "aquacare-app": {
         title: "AquaCare: Smart Arduino Fish Feeder",
         images: [
             "images/aq3.jpg",
@@ -23,13 +23,28 @@ const PROJECT_DATA = {
         description: "An IoT-based aquarium management system that automates fish feeding, monitors water quality in real time, and performs automated water changes through a mobile application.",
         technologies: ["Flutter", "Firebase", "ESP32", "IoT"]
     },
-    "todo-app": {
-        title: "To-Do App",
+    "agrifeed-solar": {
+        title: "AgriFeed Solar (Freelance)",
         images: [
-            "images/todo.jpg"
+            "images/ag1.jpg",
+            "images/ag2.jpg",
+            "images/ag3.jpg",
+            "images/ag4.jpg",
+            "images/ag5.jpg",
+            "images/ag6.jpg",
+            "images/ag7.jpg",
+            "images/ag8.jpg",
+            "images/ag9.jpeg",
+            "images/ag10.jpeg",
+            "images/ag11.jpeg",
+            "images/ag12.jpeg",
+            "images/ag13.jpeg",
+            "images/ag14.jpeg",
+            "images/ag15.jpeg",
+            "images/ag16.jpeg"
         ],
-        description: "A simple and efficient to-do list app built with Flutter, featuring task organization and reminders.",
-        technologies: ["Flutter", "Dart"]
+        description: "An IoT-based aquarium management system that automates fish feeding, monitors water quality in real time, and performs automated water changes through a mobile application.",
+        technologies: ["Flutter", "Firebase", "ESP32", "IoT"]
     },
     "score-recorder": {
         title: "Score Recorder App",

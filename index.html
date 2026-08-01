@@ -128,7 +128,8 @@
 
     <section id="skills">
         <div class="section-container">
-            <h2 class="section-title">Skills & Expertise</h2>
+            <h2 class="section-title">Technical Skills</h2>
+            <!-- <h2 class="section-title">Skills & Expertise</h2> -->
 
             <div class="skills-container">
 
@@ -196,9 +197,8 @@
                         </div>
 
                         <div class="skill-item">
-                            <!-- <img src="images/nextjs.png" alt="Next.js" width="24" height="24"> -->
-                             <i class="devicon-nextjs-plain"></i>
-                            <span>Next.js</span>
+                             <i class="devicon-express-original"></i>
+                            <span>Express.js</span>
                         </div>
 
                     </div>
@@ -218,6 +218,11 @@
                             <!-- <img src="images/mongodb.png" alt="MongoDB" width="24" height="24"> -->
                             <i class="devicon-mongodb-plain colored"></i>
                             <span>MongoDB</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <i class="devicon-postgresql-plain colored"></i>
+                            <span>PostgreSQL</span>
                         </div>
 
                         <div class="skill-item">
@@ -293,7 +298,7 @@
                 <div class="project-card" data-category="flutter">
                     <div class="project-img">
                         <img src="images/aq2.jpg" alt="AquaCare">
-                        <button class="view-details-btn" onclick="openLightbox('hello-app')">
+                        <button class="view-details-btn" onclick="openLightbox('aquacare-app')">
                             <i class="fas fa-images"></i> View UI
                         </button>
                     </div>
@@ -320,28 +325,6 @@
                     </div>
                 </div>
                 
-                <!-- <div class="project-card" data-category="flutter">
-                    <div class="project-img">
-                        <img src="images/flutter2.png" alt="To-Do App">
-                        <button class="view-details-btn" onclick="openModal('todo-app')">
-                            View UI <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                    <div class="project-info">
-                        <h3>To-Do App</h3>
-                        <p>A simple and efficient to-do list app built with Flutter, featuring task organization and reminders.</p>
-                        <div class="project-tags">
-                            <span>Flutter</span>
-                            <span>Dart</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/ggemryD/ToDo-App/tree/master" target="_blank" class="project-action-btn github-btn">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
-                
                 <div class="project-card" data-category="flutter">
                     <div class="project-img">
                         <img src="images/score-recorder.png" alt="Score Recorder App">
@@ -365,9 +348,43 @@
                             <a href="https://github.com/ggemryD/Score-Recorder-App" target="_blank" class="project-action-btn github-btn">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
-                            <!-- <a href="#" target="_blank" class="project-action-btn demo-btn">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="flutter">
+                    <div class="project-img">
+                        <img src="images/ag-bg.png" alt="AgriFeed Solar">
+
+                        <button class="view-details-btn" onclick="openLightbox('agrifeed-solar')">
+                            <i class="fas fa-images"></i> View UI
+                        </button>
+                    </div>
+
+                    <div class="project-info">
+                        <h3>AgriFeed Solar (Freelance)</h3>
+
+                        <p>
+                            A smart IoT feeding system for sustainable piggery production, featuring automated feeding, remote control, and real-time monitoring.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>ESP32</span>
+                            <span>IoT</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="YOUR_GITHUB_LINK" target="_blank" class="project-action-btn github-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+
+                            <!--
+                            <a href="#" target="_blank" class="project-action-btn demo-btn">
                                 <i class="fas fa-external-link-alt"></i> Demo
-                            </a> -->
+                            </a>
+                            -->
                         </div>
                     </div>
                 </div>
@@ -375,10 +392,6 @@
                 <div class="project-card" data-category="web">
                     <div class="project-img">
                         <img src="images/fishdaddies-logo.png" alt="Fish Daddies">
-                        <!-- <div class="project-links">
-                            <a href="#" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
-                            <a href="#" target="_blank" class="external-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div> -->
                         <button class="view-details-btn" onclick="openLightbox('fishdaddies-web')">
                             <i class="fas fa-images"></i> View UI
                         </button>
@@ -436,7 +449,7 @@
 
                 <div class="project-card" data-category="web">
                     <div class="project-img">
-                        <img src="images/in-bg.png" alt="Inventory Management System">
+                        <img src="images/in-bgg.png" alt="Inventory Management System">
 
                         <button class="view-details-btn" onclick="openLightbox('inventory-system')">
                             <i class="fas fa-images"></i> View UI
@@ -447,10 +460,10 @@
                         <h3>Inventory Management System</h3>
 
                         <!-- <p>
-                            A full-stack inventory management system designed to streamline inventory operations through secure authentication, role-based access control, and real-time inventory tracking. The system enables administrators and staff to efficiently manage products, categories, users, and generate PDF reports through a responsive and user-friendly interface.
+                            A full-stack inventory management system built with React, Express.js, and PostgreSQL. It features JWT authentication, role-based access control, inventory and user management, product categorization, PDF report generation, and a responsive dashboard designed to simplify inventory operations.
                         </p> -->
                         <p>
-                            A full-stack inventory management system built with React, Express.js, and PostgreSQL. It features JWT authentication, role-based access control, inventory and user management, product categorization, PDF report generation, and a responsive dashboard designed to simplify inventory operations.
+                            A full-stack inventory management system designed to simplify inventory operations through secure authentication, role-based access control, product and user management, and PDF report generation.
                         </p>
 
                         <div class="project-tags">
